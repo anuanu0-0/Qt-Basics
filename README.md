@@ -3,7 +3,7 @@
 ----------------
 
 ### FORM LAYOUT
---------------
+
 ![form](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/form.png)
 
 ```cpp
@@ -28,7 +28,7 @@
 
     
 ### QVLAYOUT
---------------------
+
 ![Qvbox](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/Qvbox.png)
 
 ```cpp
@@ -53,12 +53,12 @@
         window->setLayout(layout);
         window->show();
         return app.exec();
-</pre>
+```
 
 ###  QHLAYOUT
---------------------
+
 ![QHbox](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/QHbox.png)
-<pre>
+```cpp
         QApplication app(argc, argv);
         QWidget *window = new QWidget;
         QLineEdit *urlLineEdit = new QLineEdit;
@@ -77,7 +77,7 @@
 ### Signals and Slots
 --------------------------
 
-#### * Quit Application
+####  Quit Application
 
 
 ```cpp
