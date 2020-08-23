@@ -1,7 +1,7 @@
 # Qt-Basics
 ## Layouts
 ----------------
-----------------
+
 ### FORM LAYOUT
 --------------
 ![form](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/form.png)
@@ -30,7 +30,8 @@
 ### QVLAYOUT
 --------------------
 ![Qvbox](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/Qvbox.png)
- <pre>
+
+```cpp
         QApplication app(argc, argv);
         QWidget *window = new QWidget;
         QLabel *label1 = new QLabel("Username");
@@ -70,25 +71,29 @@
         window->setLayout(layout);
         window->show();
         return app.exec();
-</pre>
+
+```
 
 ### Signals and Slots
 --------------------------
-------------------------
-#### Quit Application
---------------
-<pre>
+
+#### * Quit Application
+
+
+```cpp
         QApplication app(argc, argv);
         QPushButton *quitButton = new QPushButton("Quit");
         QObject::connect(quitButton, SIGNAL(clicked()), &app, SLOT(quit()));
         quitButton->show();
         return app.exec();
-</pre>
+
+```
 
 #### Dials
 -----------------
 ![QHbox](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/dials.png)
-<pre>
+
+```cpp
         QApplication app(argc, argv);
         QWidget *window = new QWidget;
         QVBoxLayout *layout = new QVBoxLayout;
@@ -100,4 +105,5 @@
         window->setLayout(layout);
         window->show();
         return app.exec();
-</pre>
+
+```
