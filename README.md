@@ -108,7 +108,7 @@
 
 ```
 
-#### One Signal Multiple Slots
+#### One Signal Multiple Slots eg-1
 ![multipleSlots](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/multipleSlots.png)
 
 ```cpp
@@ -132,4 +132,34 @@
     window->show();
     return app.exec();
 
+```
+
+#### Multiple slots eg-2
+
+![mSlots](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/mslots.png)
+
+```cpp
+    QApplication app(argc, argv);
+    QWidget *window = new QWidget;
+    QVBoxLayout *layout = new QVBoxLayout;
+    QDial *volumeDial = new  QDial;
+    QSlider *lengthSlider = new QSlider(Qt::Horizontal);
+    QLCDNumber *volumeLCD = new QLCDNumber;
+    volumeLCD->setPalette(Qt::green);
+    volumeDial->setNotchesVisible(true);
+    volumeDial->setMinimum(0);
+    volumeDial->setMaximum(100);
+    lengthSlider->setTickPosition(QSlider::TicksAbove);
+    lengthSlider->setTickInterval(10);
+    lengthSlider->setSingleStep(1);
+    lengthSlider->setMinimum(0);
+    lengthSlider->setMaximum(100);
+    layout->addWidget(volumeDial);
+    layout->addWidget(lengthSlider);
+    layout->addWidget(volumeLCD);
+    QObject::connect(volumeDial, SIGNAL(valueChanged(int)), volumeLCD, SLOT(display(int)));
+    QObject::connect(lengthSlider, SIGNAL(valueChanged(int)), volumeLCD, SLOT(display(int)));
+    window->setLayout(layout);
+    window->show();
+    return app.exec();
 ```
