@@ -6,7 +6,7 @@
 --------------
 ![form](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/form.png)
 <pre>
-
+```cpp
     QApplication app(argc, argv);
     QWidget *window = new QWidget;
     QLineEdit *firstNameLineEdit = new QLineEdit;
@@ -24,6 +24,7 @@
     window->setLayout(personalInfoFormLayout);
     window->show();
     return app.exec();
+```
 </pre>
     
 ### QVLAYOUT
