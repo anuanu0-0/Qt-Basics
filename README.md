@@ -90,7 +90,7 @@
 ```
 
 #### Dials
------------------
+
 ![QHbox](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/dials.png)
 
 ```cpp
