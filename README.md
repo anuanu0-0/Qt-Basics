@@ -3,7 +3,7 @@
 <pre>
 FORM LAYOUT
 --------------
-    ![Form](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/form.png?raw=true)
+    ![Form](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/form.png)
 
     QApplication app(argc, argv);
     QWidget *window = new QWidget;
