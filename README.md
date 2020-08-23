@@ -1,5 +1,7 @@
 # Qt-Basics
-
+## Layouts
+----------------
+----------------
 ### FORM LAYOUT
 --------------
 ![form](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/form.png)
@@ -25,6 +27,7 @@
 </pre>
     
 ### QVLAYOUT
+--------------------
 ![Qvbox](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/Qvbox.png)
  <pre>
         QApplication app(argc, argv);
@@ -51,6 +54,7 @@
 </pre>
 
 ###  QHLAYOUT
+--------------------
 ![QHbox](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/QHbox.png)
 <pre>
         QApplication app(argc, argv);
@@ -62,6 +66,36 @@
         QHBoxLayout *layout = new QHBoxLayout;
         layout->addWidget(urlLineEdit);
         layout->addWidget(exportButton);
+        window->setLayout(layout);
+        window->show();
+        return app.exec();
+</pre>
+
+### Signals and Slots
+--------------------------
+------------------------
+#### Quit Application
+--------------
+<pre>
+        QApplication app(argc, argv);
+        QPushButton *quitButton = new QPushButton("Quit");
+        QObject::connect(quitButton, SIGNAL(clicked()), &app, SLOT(quit()));
+        quitButton->show();
+        return app.exec();
+</pre>
+
+#### Dials
+-----------------
+![QHbox](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/dials.png)
+<pre>
+        QApplication app(argc, argv);
+        QWidget *window = new QWidget;
+        QVBoxLayout *layout = new QVBoxLayout;
+        QLabel *volumeLabel = new QLabel("0");
+        QDial *volumeDial = new QDial;
+        layout->addWidget(volumeDial);
+        layout->addWidget(volumeLabel);
+        QObject::connect(volumeDial, SIGNAL(valueChanged(int)), volumeLabel, SLOT(setNum(int)));
         window->setLayout(layout);
         window->show();
         return app.exec();
