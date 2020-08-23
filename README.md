@@ -1,9 +1,9 @@
 # Qt-Basics
-
+![form](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/form.png)
 <pre>
 FORM LAYOUT
 --------------
-    ![Form](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/form.png)
+    ![form](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/form.png)
 
     QApplication app(argc, argv);
     QWidget *window = new QWidget;
