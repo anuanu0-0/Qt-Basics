@@ -1,8 +1,8 @@
 # Qt-Basics
-## Layouts
+### Layouts
 ----------------
 
-### FORM LAYOUT
+#### FORM LAYOUT
 
 ![form](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/form.png)
 
@@ -27,7 +27,7 @@
 ```
 
     
-### QVLAYOUT
+#### QVLAYOUT
 
 ![Qvbox](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/Qvbox.png)
 
@@ -55,7 +55,7 @@
         return app.exec();
 ```
 
-###  QHLAYOUT
+####  QHLAYOUT
 
 ![QHbox](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/QHbox.png)
 ```cpp
