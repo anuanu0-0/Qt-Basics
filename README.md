@@ -108,8 +108,9 @@
 
 ```
 
-#### One Siganl Multiple Slots
+#### One Signal Multiple Slots
 ![multipleSlots](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/multipleSlots.png)
+
 ```cpp
     QApplication app(argc, argv);
     QWidget *window = new QWidget;
@@ -130,5 +131,5 @@
     window->setLayout(layout);
     window->show();
     return app.exec();
-}
+
 ```
