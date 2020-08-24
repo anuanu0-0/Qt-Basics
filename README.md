@@ -163,3 +163,11 @@
     window->show();
     return app.exec();
 ```
+
+
+#### MenuBars
+
+![menuBar](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/menuBar.png)
+![menuBar2](https://github.com/anuanu0-0/Qt-Basics/blob/master/img/menuBar2.png)
+
+
